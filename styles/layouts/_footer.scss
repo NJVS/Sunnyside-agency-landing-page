@@ -1,0 +1,90 @@
+@use '../helpers/variables' as var;
+@use '../helpers/mixins'as mx;
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 0;
+  width: 100%;
+  background-color: var.getColor('primary', 'dark-cyan');
+
+  a.footer-logo {
+    display: inline-flex;
+    margin-bottom: 30px;
+    
+    svg {
+      width: 172px;
+      height: 34px;
+      path {
+        fill: var.getColor('primary', 'dark-moderate-cyan');
+        transition: all 0.3s ease;
+      }
+    }
+
+    @include mx.hover {
+      svg path {
+        fill: var.getColor('neutral', 'white');
+      }
+    }
+  }
+
+  .footer-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+
+    a.nav-link {
+      color: var.getColor('primary', 'dark-moderate-cyan');
+      font-family: var.getFont('secondary');
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      
+      @include mx.hover {
+        color: var.getColor('neutral', 'white');
+      }
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 2rem;
+    margin: 75px 0 20px;
+
+    a {
+      display: inline-flex;
+      svg path {
+        fill: var.getColor('primary', 'dark-moderate-cyan');
+        transition: all 0.3s ease;
+      }
+
+      @include mx.hover {
+        svg path {
+          fill: var.getColor('neutral', 'white');
+        }
+      }
+    }
+  }
+
+  .footer-attribution {
+    color: var.getColor('primary', 'dark-moderate-cyan');
+    font-family: var.getFont('secondary');
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    a {
+      color: var.getColor('primary', 'dark-desaturated-cyan');
+      font-family: var.getFont('primary');
+      font-weight: 900;
+      transition: all 0.3s ease;
+
+      @include mx.hover {
+        color: var.getColor('neutral', 'white');
+      }
+    }
+  }
+
+}

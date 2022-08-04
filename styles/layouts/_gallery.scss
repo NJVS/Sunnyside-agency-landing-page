@@ -1,0 +1,23 @@
+@use '../helpers/variables' as var;
+@use '../helpers/mixins'as mx;
+
+aside.gallery {
+  width: 100%;
+  background-color: var.getColor('primary', 'dark-cyan');
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1440px;
+    // width: 100%;
+    margin: auto;
+
+    @include mx.media-query('mobile', 'lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use '../helpers/variables' as var;
+
+main.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var.getColor('primary', 'sky-blue');
+}

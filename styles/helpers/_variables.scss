@@ -1,0 +1,71 @@
+// Fonts
+$fonts: (
+  'primary': 'Fraunces', // 700|900
+  'secondary': 'Barlow', // 400|600
+);
+
+
+// Colors
+$colors: (
+  'primary': (
+    'soft-red': hsl(7, 99%, 70%),
+    'yellow': hsl(51, 100%, 49%),
+    'sky-blue': hsl(200, 100%, 62%),
+    'dark-desaturated-cyan': hsl(167, 40%, 24%),  // graphic design text
+    'dark-moderate-cyan': hsl(168, 34%, 41%),     // footer text
+    'dark-cyan': hsl(167, 44%, 70%),              // footer background
+    'dark-blue': hsl(198, 62%, 26%)               // photography text
+  ),
+  'neutral': (
+    'very-dark-desaturated': hsl(212, 27%, 19%),
+    'very-dark-gray': hsl(213, 9%, 39%),
+    'dark-gray': hsl(232, 10%, 55%),
+    'gray': hsl(210, 4%, 67%),
+    'white': hsl(0, 0%, 100%)
+  )
+);
+
+
+
+// breakpoints
+$breakpoints: (
+  'desktop': (
+    'lg': 1920px,
+    'md': 1440px,
+    'sm': 1366px
+  ),
+  'mobile': (
+    'lg': 912px,
+    'md': 768px,
+    'sm': 426px
+  )
+);
+
+
+//
+// ACCESSING VARIABLES
+// 
+
+// Fetch deeply nested values from a map
+@function deepMap($map, $keys...) {
+  @each $key in $keys {
+      @if map-has-key($map, $key) {
+          $map: map-get($map, $key);
+      } @else {
+          $_: log("#{$key} key doesn't exist");
+          @return null;
+      }
+  }
+
+  @return $map;
+}
+
+// Fetch fonts
+@function getFont($keys...) {
+  @return deepMap($fonts, $keys...);
+}
+
+// Fetch colors
+@function getColor($keys...) {
+  @return deepMap($colors, $keys...);
+}

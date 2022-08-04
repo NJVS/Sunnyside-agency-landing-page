@@ -1,0 +1,18 @@
+@use '../helpers/variables' as var;
+
+
+//--- Hover ---//
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+//--- Media Queries ---//
+@mixin media-query($type, $size) {
+  @media (max-width: var.deepMap(var.$breakpoints, $type, $size)) {
+    @content;
+  }
+}

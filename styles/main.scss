@@ -1,0 +1,12 @@
+// Base
+@use './base/reset';
+@use './base/keyframes';
+
+// Layout
+@use './layouts/main';
+@use './layouts/header';
+@use './layouts/about';
+@use './layouts/services';
+@use './layouts/testimonials';
+@use './layouts/gallery';
+@use './layouts/footer';

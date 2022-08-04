@@ -1,0 +1,50 @@
+@use '../helpers/variables' as var;
+@use '../helpers/mixins'as mx;
+
+section.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  max-width: 1440px;
+
+  @include mx.media-query('mobile', 'sm') {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    &:first-child {
+      color: var.getColor('primary', 'dark-desaturated-cyan');
+    }
+    &:last-child {
+      color: var.getColor('primary', 'dark-blue');
+    }
+
+    .card-content {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(400px, 90%);
+      text-align: center;
+
+
+      .title {
+        font-family: var.getFont('primary');
+        font-size: 2rem;
+        font-weight: 900;
+        @include mx.media-query('mobile', 'lg') {
+          font-size: 1.8rem;
+        }
+      }
+      .text {
+        margin-top: 30px;
+        font-family: var.getFont('secondary');
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
