@@ -25,9 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto">
-<img src="./assets/design/screenshots/tablet.png" style="width: 200px; height: auto">
-<img src="./assets/design/screenshots/phone.png" style="width: 200px; height: auto">
+<img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto"> <img src="./assets/design/screenshots/tablet.png" style="width: 200px; height: auto"> <img src="./assets/design/screenshots/phone.png" style="width: 200px; height: auto">
 
 ### Links
 
