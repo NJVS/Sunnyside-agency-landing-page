@@ -25,14 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./assets/design/screenshots/desktop.png) ![](./assets/design/screenshots/tablet.png) ![](./assets/design/screenshots/phone.png) -->
-
-<div style="display: grid; grid-template-columns: repeat(3, 1fr)">
-  <img src="./assets/design/screenshots/desktop.png">
-  <img src="./assets/design/screenshots/tablet.png">
-  <img src="./assets/design/screenshots/phone.png">
-</div>
-
+<img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto">
+<img src="./assets/design/screenshots/tablet.png" style="width: 200px; height: auto">
+<img src="./assets/design/screenshots/phone.png" style="width: 200px; height: auto">
 
 ### Links
 
