@@ -25,9 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: start !important"> -->
 <img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto"> <img src="./assets/design/screenshots/tablet.png" style="width: auto; height: 580px"> <img src="./assets/design/screenshots/phone.png" style="width: auto; height: 580px">
-<!-- </div> -->
 
 ### Links
 
