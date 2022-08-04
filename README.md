@@ -25,7 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/design/screenshots/desktop.png) ![](./assets/design/screenshots/tablet.png) ![](./assets/design/screenshots/phone.png)
+<!-- ![](./assets/design/screenshots/desktop.png) ![](./assets/design/screenshots/tablet.png) ![](./assets/design/screenshots/phone.png) -->
+<img src="./assets/design/screenshots/desktop.png" style="width: 400px; height: auto">
+<img src="./assets/design/screenshots/tablet.png" style="width: 400px; height: auto">
+<img src="./assets/design/screenshots/phone.png" style="width: 400px; height: auto">
 
 ### Links
 
