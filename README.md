@@ -27,7 +27,7 @@ Users should be able to:
 
 <!-- ![](./assets/design/screenshots/desktop.png) ![](./assets/design/screenshots/tablet.png) ![](./assets/design/screenshots/phone.png) -->
 
-<div style="display: flex">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr)">
   <img src="./assets/design/screenshots/desktop.png">
   <img src="./assets/design/screenshots/tablet.png">
   <img src="./assets/design/screenshots/phone.png">
