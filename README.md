@@ -25,7 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto"> <img src="./assets/design/screenshots/tablet.png" style="width: 200px; height: auto"> <img src="./assets/design/screenshots/phone.png" style="width: 200px; height: auto">
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+  <img src="./assets/design/screenshots/desktop.png" style="width: 200px; height: auto"> 
+  <img src="./assets/design/screenshots/tablet.png" style="width: 200px; height: auto">
+  <img src="./assets/design/screenshots/phone.png" style="width: 200px; height: auto">
+</div>
 
 ### Links
 
