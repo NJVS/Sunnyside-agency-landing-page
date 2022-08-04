@@ -124,7 +124,7 @@ header.hero {
 @media (max-width: 426px) {
   header.hero {
     height: 100vh;
-    background-image: url(../../assets/images/mobile/image-header.jpg);
+    background-image: url(../assets/images/mobile/image-header.jpg);
   }
 }
 
